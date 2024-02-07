@@ -1,14 +1,21 @@
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #E0F4FF;
-  }
+}
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    background-color: #ffffff;
-    padding: 20px;
-    margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .container {
@@ -20,47 +27,53 @@ body {
 
 .featured-image {
   width: 50%;
+  margin: 10px;
   max-height: fit-content;
   object-fit: cover;
-  object-position: center;
+  position: sticky;
 }
 
+
 .img-type {
-    margin-left: 120px;
+    margin: 0 auto;
+    padding: 10px;
   }
 
   .type-fish .img-type img {
     height: 200px;
-    width: 200px;
+    width: 100%;
     border-radius: 20px;
   }
 
   .img-type figcaption {
     text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .type-fish {
     background-color: #E0F4FF;
     border-radius: 8px;
-    margin-top: 30px;
-    margin: 15px;
+    margin-top: 10px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     color: #001219;
   }
 
-  /* .type-fish .img-type img {
+  .type-fish .img-type img {
     max-height: 200px;
     width: 100%;
     border-radius: 20px;
-  } */
-
-  .type-left { 
-    display: flex; flex-direction: row;
   }
 
+  .type-left { 
+    display: flex; 
+    flex-direction: row; 
+  }
   .type-fish h2 {text-align: center;}
-
 
   footer {
     padding: 20px;
